@@ -6,14 +6,13 @@ class DarkTheme {
 
   static final ThemeData darkTheme = ThemeData(
     brightness: Brightness.dark,
-    scaffoldBackgroundColor: AppColors.backgroundScaffoldColor,
     primaryColor: AppColors.primary,
+    scaffoldBackgroundColor: Colors.transparent,
     fontFamily: 'Dana',
     textTheme: AppTextTheme.darkTextTheme,
     colorScheme: ColorScheme.dark(
       primary: AppColors.primary,
       secondary: AppColors.accent,
-      surface: AppColors.backgroundScaffoldColor,
       onPrimary: Colors.white,
       onSecondary: Colors.white,
       onSurface: Colors.white,

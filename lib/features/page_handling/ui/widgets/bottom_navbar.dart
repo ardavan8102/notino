@@ -28,9 +28,9 @@ class BottomNavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          _buildNavItem(0, LucideIcons.home, 'خــانـه', textTheme),
-          _buildNavItem(1, LucideIcons.fileText, 'یادداشت‌ها', textTheme),
-          _buildNavItem(2, LucideIcons.settings, 'تنظیمات', textTheme),
+          _buildNavItem(0, LucideIcons.home300, 'خــانـه', textTheme),
+          _buildNavItem(1, LucideIcons.plusCircle300, 'افـزودن', textTheme),
+          _buildNavItem(2, LucideIcons.fileText300, 'یادداشت‌ها', textTheme),
         ],
       ),
     );

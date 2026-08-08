@@ -4,8 +4,8 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:notino/app/db/hive_database.dart';
 import 'package:notino/app/db/seed.dart';
+import 'package:notino/app/routes/router_provider.dart';
 import 'package:notino/core/theme/app_theme.dart';
-import 'package:notino/features/page_handling/ui/views/page_handler.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,13 +24,16 @@ void main() async {
   );
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends ConsumerWidget {
   const MyApp({super.key});
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  Widget build(BuildContext context, WidgetRef ref) {
+
+    final router = ref.watch(AppRouter().routerProvider);
+
+    return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Notino',
       locale: const Locale('fa', 'IR'),
@@ -43,7 +46,7 @@ class MyApp extends StatelessWidget {
         GlobalCupertinoLocalizations.delegate,
       ],
       theme: AppTheme.darkTheme,
-      home: PageHandler(),
+      routerConfig: router,
     );
   }
 }

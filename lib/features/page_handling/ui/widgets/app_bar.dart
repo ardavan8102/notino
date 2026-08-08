@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 import 'package:notino/core/constants/dimens.dart';
 
@@ -19,14 +20,19 @@ class MainAppBar extends StatelessWidget {
     
         const Spacer(),
     
-        Container(
-          decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: .15),
-            borderRadius: BorderRadius.circular(AppDimens.borderRadiusLarge),
-          ),
-          padding: EdgeInsets.all(AppDimens.paddingSmall),
-          child: Icon(
-            LucideIcons.heart300
+        GestureDetector(
+          onTap: () {
+            context.push('/settings');
+          },
+          child: Container(
+            decoration: BoxDecoration(
+              color: Colors.white.withValues(alpha: .15),
+              borderRadius: BorderRadius.circular(AppDimens.borderRadiusLarge),
+            ),
+            padding: EdgeInsets.all(AppDimens.paddingSmall),
+            child: Icon(
+              LucideIcons.settings300
+            ),
           ),
         ),
       ],

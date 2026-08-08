@@ -6,6 +6,7 @@ class AppDimens {
   static const double marginSmall = 8.0;
   static const double marginMedium = 16.0;
   static const double marginLarge = 24.0;
+  static const double marginXLarge = 32.0;
 
   static const double iconSizeSmall = 16.0;
   static const double iconSizeMedium = 24.0;

@@ -257,6 +257,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
+  dbus:
+    dependency: transitive
+    description:
+      name: dbus
+      sha256: "792974a4007974fbc5c1b5433eb2330a9db3e368c3f906253af4c007d0f49a91"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.13"
   diff_match_patch:
     dependency: transitive
     description:
@@ -281,14 +289,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.2.0"
-  ffi_leak_tracker:
-    dependency: transitive
-    description:
-      name: ffi_leak_tracker
-      sha256: "4093d4ef9ca06ffe2786e73bfb25e22aa92112b9bb4ec941f11e3e6b61489a97"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.1.2"
   file:
     dependency: transitive
     description:
@@ -297,6 +297,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "7.0.1"
+  file_picker:
+    dependency: "direct main"
+    description:
+      name: file_picker
+      sha256: "29cc1fdb20613876cc7afc529738c1c0f11a9ca159b010edad0c566ac330847e"
+      url: "https://pub.dev"
+    source: hosted
+    version: "11.0.3"
   file_selector_linux:
     dependency: transitive
     description:
@@ -305,6 +313,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.9.4"
+  file_selector_macos:
+    dependency: transitive
+    description:
+      name: file_selector_macos
+      sha256: "5e0bbe9c312416f1787a68259ea1505b52f258c587f12920422671807c4d618a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.9.5"
   file_selector_platform_interface:
     dependency: transitive
     description:
@@ -589,6 +605,70 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.9.1"
+  image_picker:
+    dependency: "direct main"
+    description:
+      name: image_picker
+      sha256: d8402284df184bc05f4a2210c6c23983b0720f4cd87cbd05c5390a78af602667
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.2.3"
+  image_picker_android:
+    dependency: transitive
+    description:
+      name: image_picker_android
+      sha256: "6f3a1995eafb000333174fae92202622033b0ee7fd917a6cd3730295264df84a"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.13+19"
+  image_picker_for_web:
+    dependency: transitive
+    description:
+      name: image_picker_for_web
+      sha256: "66257a3191ab360d23a55c8241c91a6e329d31e94efa7be9cf7a212e65850214"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.1"
+  image_picker_ios:
+    dependency: transitive
+    description:
+      name: image_picker_ios
+      sha256: b9c4a438a9ff4f60808c9cf0039b93a42bb6c2211ef6ebb647394b2b3fa84588
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.8.13+6"
+  image_picker_linux:
+    dependency: transitive
+    description:
+      name: image_picker_linux
+      sha256: "1f81c5f2046b9ab724f85523e4af65be1d47b038160a8c8deed909762c308ed4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2"
+  image_picker_macos:
+    dependency: transitive
+    description:
+      name: image_picker_macos
+      sha256: "86f0f15a309de7e1a552c12df9ce5b59fe927e71385329355aec4776c6a8ec91"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2+1"
+  image_picker_platform_interface:
+    dependency: transitive
+    description:
+      name: image_picker_platform_interface
+      sha256: "567e056716333a1647c64bb6bd873cff7622233a5c3f694be28a583d4715690c"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.11.1"
+  image_picker_windows:
+    dependency: transitive
+    description:
+      name: image_picker_windows
+      sha256: d248c86554a72b5495a31c56f060cf73a41c7ff541689327b1a7dbccc33adfae
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.2"
   image_size_getter:
     dependency: transitive
     description:
@@ -945,10 +1025,10 @@ packages:
     dependency: transitive
     description:
       name: quill_native_bridge
-      sha256: "53c7ee4e900ce63fcf566391c5c20a939890cfcf000486d325f451869d23a281"
+      sha256: "76a16512e398e84216f3f659f7cb18a89ec1e141ea908e954652b4ce6cf15b18"
       url: "https://pub.dev"
     source: hosted
-    version: "11.2.0"
+    version: "11.1.0"
   quill_native_bridge_android:
     dependency: transitive
     description:
@@ -962,14 +1042,6 @@ packages:
     description:
       name: quill_native_bridge_ios
       sha256: "31f9a0a955f85fbcd2576fdb6feb1879c70d770980d7f0118b7f2c0621c6b745"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.3"
-  quill_native_bridge_linux:
-    dependency: transitive
-    description:
-      name: quill_native_bridge_linux
-      sha256: "310ba83ed5bc049033224e9be1e9433d9000e2ad1357c47ece9c0fbc61f4ecad"
       url: "https://pub.dev"
     source: hosted
     version: "0.0.3"
@@ -1001,10 +1073,10 @@ packages:
     dependency: transitive
     description:
       name: quill_native_bridge_windows
-      sha256: e91090a2f3ff61cf18bd011f6c0a6c9625f145601e6e8eccf91b6d6cb9a572f8
+      sha256: "3f96ced19e3206ddf4f6f7dde3eb16bdd05e10294964009ea3a806d995aa7caa"
       url: "https://pub.dev"
     source: hosted
-    version: "0.1.0"
+    version: "0.0.2"
   quiver:
     dependency: transitive
     description:
@@ -1350,10 +1422,10 @@ packages:
     dependency: transitive
     description:
       name: win32
-      sha256: ba6f4bba816c8d7e3c1580e170f3786d216951cc6b94babc3b814c08d2cb2738
+      sha256: d7cb55e04cd34096cd3a79b3330245f54cb96a370a1c27adb3c84b917de8b08e
       url: "https://pub.dev"
     source: hosted
-    version: "6.3.0"
+    version: "5.15.0"
   xdg_directories:
     dependency: transitive
     description:

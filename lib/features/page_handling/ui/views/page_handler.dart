@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:notino/core/constants/colors.dart';
 import 'package:notino/core/constants/dimens.dart';
-import 'package:notino/features/add_notes/ui/view/add_note_page.dart';
+import 'package:notino/features/notes/ui/add_notes/view/add_note_page.dart';
 import 'package:notino/features/dashboard/ui/views/dashboard_screen.dart';
 import 'package:notino/features/notes/ui/notes_page.dart';
 import 'package:notino/features/page_handling/providers/navigation_provider.dart';

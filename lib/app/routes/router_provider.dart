@@ -1,6 +1,6 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
-import 'package:notino/features/add_notes/ui/view/add_note_page.dart';
+import 'package:notino/features/notes/ui/add_notes/view/add_note_page.dart';
 import 'package:notino/features/dashboard/ui/views/dashboard_screen.dart';
 import 'package:notino/features/notes/ui/notes_page.dart';
 import 'package:notino/features/page_handling/ui/views/page_handler.dart';

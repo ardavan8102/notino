@@ -1,4 +1,5 @@
 import 'package:hive_ce_flutter/hive_flutter.dart';
+import 'package:notino/features/notes/logic/models/note_model.dart';
 import 'package:notino/features/tags/models/tag_model.dart';
 
 class HiveDatabase {
@@ -11,6 +12,14 @@ class HiveDatabase {
       TagModelAdapter()
     );
 
+    Hive.registerAdapter(
+      NoteModelAdapter()
+    );
+
+    Hive.registerAdapter(
+      NoteAttachmentAdapter()
+    );
+
   }
 
 
@@ -18,7 +27,7 @@ class HiveDatabase {
 
     await Hive.openBox<TagModel>('tags');
 
-    await Hive.openBox('notes');
+    await Hive.openBox<NoteModel>('notes');
 
     await Hive.openBox('settings');
 

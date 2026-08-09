@@ -3,16 +3,21 @@
 // Check in to version control
 
 import 'package:hive_ce/hive_ce.dart';
+import 'package:notino/features/notes/logic/models/note_model.dart';
 import 'package:notino/features/tags/models/tag_model.dart';
 
 extension HiveRegistrar on HiveInterface {
   void registerAdapters() {
+    registerAdapter(NoteAttachmentAdapter());
+    registerAdapter(NoteModelAdapter());
     registerAdapter(TagModelAdapter());
   }
 }
 
 extension IsolatedHiveRegistrar on IsolatedHiveInterface {
   void registerAdapters() {
+    registerAdapter(NoteAttachmentAdapter());
+    registerAdapter(NoteModelAdapter());
     registerAdapter(TagModelAdapter());
   }
 }
